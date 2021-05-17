@@ -1,10 +1,8 @@
 package es.cc.esliceu.db.limbo;
 
 import es.cc.esliceu.db.limbo.util.Color;
-import javax.mail.internet.AddressException;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.sql.SQLException;
 import java.util.*;
 
 public class Limbo {
