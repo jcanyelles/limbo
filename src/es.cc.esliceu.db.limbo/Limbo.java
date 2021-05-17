@@ -16,16 +16,23 @@ public class Limbo {
 
     public static void main(String[] args) throws IOException, SQLException, AddressException, ClassNotFoundException {
 
-        FileInputStream input = new FileInputStream("resources/limbo.properties");
+        FileInputStream input = new FileInputStream("limbo/resources/limbo.properties");
         Properties props = new Properties();
         props.load(input);
         String URL = props.getProperty("url");
         String USERNAME = props.getProperty("user");
         String PASSWORD = props.getProperty("password");
 
+        info("username " + USERNAME);
         Scanner scanner = new Scanner(System.in);
 
 
     }
 
+    public static void info(String texte){
+        System.out.println(Color.BLUE_BOLD + "\t" + texte + Color.RESET);
+    }
+    public static void errada(String texte){
+        System.out.println(Color.RED_BOLD + "\t" + texte + Color.RESET);
+    }
 }
