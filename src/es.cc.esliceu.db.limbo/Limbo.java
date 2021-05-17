@@ -4,17 +4,12 @@ import es.cc.esliceu.db.limbo.util.Color;
 import javax.mail.internet.AddressException;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.math.BigInteger;
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class Limbo {
 
-    public static void main(String[] args) throws IOException, SQLException, AddressException, ClassNotFoundException {
+    public static void main(String[] args) throws IOException {
 
         FileInputStream input = new FileInputStream("limbo/resources/limbo.properties");
         Properties props = new Properties();
@@ -25,7 +20,6 @@ public class Limbo {
 
         info("username " + USERNAME);
         Scanner scanner = new Scanner(System.in);
-
 
     }
 
